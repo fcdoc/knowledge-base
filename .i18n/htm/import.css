@@ -74,3 +74,10 @@ p b,
 strong {
   color: #000;
 }
+
+h3+hr,
+h2+hr,
+h1+hr {
+  margin: -20px 0 20px;
+  opacity: .3;
+}
