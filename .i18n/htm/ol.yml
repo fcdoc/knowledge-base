@@ -1,11 +1,11 @@
 seo: false
-host: i18n-demo.github.io
+host: fcdoc.github.io
 out:
   - fs
 
 pkg:
   i: i18n.site
-  md: i18n.site
+  md: "@fcat/doc"
 
 cdn:
   v:
