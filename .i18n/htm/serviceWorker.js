@@ -49,7 +49,7 @@ const F = {
 
 		loadFunc(await f(JSD, hostUrl(pkg_18x + "/S.js")))(
 			new Set(
-				"js|css|htm|html|md|avif|rss|gz|ico|json|png|svg|txt|webmanifest|xml".split(
+				"mp4|js|css|htm|html|md|avif|rss|gz|ico|json|png|svg|txt|webmanifest|xml".split(
 					"|",
 				),
 			),
