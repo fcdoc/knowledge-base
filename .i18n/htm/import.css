@@ -60,5 +60,6 @@ body,
 input,
 textarea,
 b {
-  font-weight: 400;
+  font-weight: 350;
+  color: #333;
 }

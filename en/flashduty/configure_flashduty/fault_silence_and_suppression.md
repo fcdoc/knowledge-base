@@ -73,4 +73,4 @@ When a fault meeting the conditions is suppressed, it will still be displayed an
 
 When there is a Critical-level fault with the same check item within 24 hours, suppress Waning and Info-level faults.
 
-<img src="https://fcdoc.github.io/img/_xRtJpNggOMFHBcNyzjRdB2vc-SpaTQ0bMI8EcTfwEo.avif" style="display: block; margin: 0 auto;" width=800>
+<img src="https://fcdoc.github.io/img/EcTfwEo.avif" style="display: block; margin: 0 auto;" width=800>
