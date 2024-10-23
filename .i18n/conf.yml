@@ -1,0 +1,21 @@
+i18n:
+  fromTo:
+    zh: en
+
+ignore:
+  - _*
+
+upload:
+  ext:
+    - md
+
+nav:
+  - i18n: doc
+    # Don't add space between `,`
+    menu: NB flashduty
+    use: Doc
+
+
+addon:
+  - i18n.addon/toc
+  # - i18n.addon/mouse
