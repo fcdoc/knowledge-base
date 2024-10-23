@@ -9,7 +9,7 @@ brief: Learn how to quickly get started with Flashduty
 ## Demonstration Video
 ---
 
-<Video src="https://download.flashcat.cloud/%e6%95%b4%e4%bd%93%e6%bc%94%e7%a4%ba.mp4"></Video>
+<Video src="https://fcdoc.github.io/img/demo.mp4"></Video>
 
 
 ## Get Started for Free

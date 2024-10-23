@@ -9,7 +9,7 @@ brief: 了解如何快速上手 Flashduty
 ## 演示视频
 ---
 
-<Video src="https://fcdoc.github.io/img/demo.mp4"></Video>
+<video controls src="https://fcdoc.github.io/img/demo.mp4"></video>
 
 
 ## 免费开始
