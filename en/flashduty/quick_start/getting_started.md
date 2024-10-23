@@ -9,7 +9,7 @@ brief: Learn how to quickly get started with Flashduty
 ## Demonstration Video
 ---
 
-<Video src="https://fcdoc.github.io/img/demo.mp4"></Video>
+<video controls src="https://fcdoc.github.io/img/demo.mp4"></video>
 
 
 ## Get Started for Free
