@@ -61,5 +61,10 @@ input,
 textarea,
 b {
   font-weight: 350;
-  color: #333;
+  color: #444;
+}
+
+p b,
+p strong {
+  color: #000;
 }
