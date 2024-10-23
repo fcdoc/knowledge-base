@@ -55,3 +55,10 @@ if want use local font , use like below
   font-style: normal;
   font-weight: normal;
 }
+
+body,
+input,
+textarea,
+b {
+  font-weight: 400;
+}
