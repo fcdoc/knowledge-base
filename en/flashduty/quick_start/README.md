@@ -1,1 +1,1 @@
-# Rapid Initialization
+# Beginner's Guide
