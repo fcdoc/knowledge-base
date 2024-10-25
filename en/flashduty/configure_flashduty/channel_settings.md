@@ -2,7 +2,7 @@
 brief: What is a collaboration space, what are its features, and how is it managed?
 ---
 
-# Collaboration Space
+# Collaborative space
 
 ---
 

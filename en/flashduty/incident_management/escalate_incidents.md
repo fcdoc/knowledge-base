@@ -15,7 +15,7 @@ When an issue is assigned to you, but you confirm that you are not the appropria
 
 Reassignment means sending out notifications again. If an issue marked as **In Progress** is reassigned, its processing status may be reset to **Pending**, unless the new handler includes the previous handler, who has already claimed the issue.
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 Currently, reassignment targets can only be the duty list or an individual, which we refer to as **Direct Assignment**. The difference from **Strategic Assignment** is that direct assignments are only notified based on personal preferences and do not allow for escalation.
 :::
 
@@ -27,7 +27,7 @@ Currently, reassignment targets can only be the duty list or an individual, whic
 
 - **Manual Upgrade**: If an issue is assigned to you automatically according to a (multi-level) dispatch strategy, but after receiving the alert, you confirm that you cannot handle the issue and require the intervention of personnel from the next level (such as second-line technical support), you can choose to directly escalate the assignment to the next level.
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 The essence of an upgrade assignment is **reassignment**, with the main difference being that **upgrade assignments** follow the dispatch and notification channels already set in the dispatch policy.
 :::
 

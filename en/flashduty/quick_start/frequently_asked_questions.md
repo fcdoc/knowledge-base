@@ -14,10 +14,10 @@ brief: Understand the most common issues when using Flashduty
 | Channels |  Private Chat  | Group Chat |
 | --- | -------- | ---- |
 | Voice    | ✅   |    |
-| SMS    | ✅   |    |
-| Email    | ✅   |    |
-| Feishu App | ✅   |  ✅  |
-| DingTalk App | ✅   |  ✅  |
+| Short Message    | ✅   |    |
+| Mail    | ✅   |    |
+| Feishu Application | ✅   |  ✅  |
+| DingTalk Application | ✅   |  ✅  |
 | WeChat Work App | ✅   |    |
 | Slack App| ✅   |  ✅  |
 | Microsoft Teams App| ✅   |  ✅  |
@@ -25,7 +25,7 @@ brief: Understand the most common issues when using Flashduty
 | DingTalk Robot    |    |  ✅  |
 | WeChat Work Robot    |    |  ✅  |
 | Zoom Robot    |    |  ✅  |
-| Telegram Robot    |    |  ✅  |
+| Telegram Bot    |    |  ✅  |
 
 </details>
 

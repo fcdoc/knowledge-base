@@ -44,7 +44,7 @@ The status of an alarm represents the status of the fault in the original monito
 - **Unrecovered**: At least one associated alarm has not been resolved, and the fault will remain in an unrecovered state.
 
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 Automatic fault recovery will automatically close the (processing progress); however, manual fault closure has no effect on the fault status.
 :::
 
@@ -79,7 +79,7 @@ You can set different dispatch strategies for different time periods or types of
 
 You can flexibly arrange notification methods within the dispatch strategy. Flashduty supports a wide range of group chat and one-on-one notification channels. One-on-one chat is a direct push channel (such as voice, text message, and email), while group chat pushes messages to a message group (such as Feishu, DingTalk, and Slack) and provides additional reminders to the assigned personnel.
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 Note that **notifications will only be sent after a fault is dispatched**. Without dispatch, there will be no notifications.
 :::
 
@@ -89,7 +89,7 @@ If a fault is assigned to a duty list (rota) with no on-call personnel, the syst
 
 On-call personnel can immediately claim the fault after receiving the notification. You can claim the fault via **voice call** or **instant message**. After claiming, the fault handling progress will change to **Processing**.
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 Flashduty currently does not limit faults to only being claimed by "assigned handlers". Anyone who can see the fault can click to claim it.
 :::
 
@@ -110,7 +110,7 @@ Each fault has a timeline that allows you to trace the changes and operations th
 
 Flashduty supports most common monitoring systems, including Prometheus, Zabbix, Nightingale, and cloud monitoring, among others. For specific steps, please refer to [Alarm Integration](https://docs.flashcat.cloud/zh/flashduty/nightingale-integration-guide).
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 Flashduty supports both dedicated integration and shared integration models. Alarms delivered to dedicated integrations within a collaboration space will trigger faults within that space.
 Alternatively, alarms can be delivered to the shared integration in the integration center, and then configured to route alarms to different collaboration spaces according to rules.
 :::
@@ -119,11 +119,11 @@ Alternatively, alarms can be delivered to the shared integration in the integrat
 
 Flashduty provides a custom event standard that allows you to report alarms via a standard protocol, suitable for any unadapted monitoring system. For detailed documentation, please read [Custom Events](https://docs.flashcat.cloud/zh/flashduty/custom-alert-integration-guide).
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 To ensure the stability of the entire system, Flashduty currently imposes a **200qps** frequency limit on API reporting. Exceeding this limit will result in the rejection of reports.
 :::
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 Please ensure that you actively close alarms, or set the fault timeout to automatically close in the collaboration space. An excessive number of faults can significantly degrade console search performance. In such cases, the system may close historical faults without any notification.
 :::
 
@@ -131,7 +131,7 @@ Please ensure that you actively close alarms, or set the fault timeout to automa
 
 Flashduty provides an email integration that allows you to report alarms by sending emails. It is suitable for all monitoring systems that support email reminders. For detailed documentation, please read [Custom Events](https://docs.flashcat.cloud/zh/flashduty/email-integration-guide).
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 You can set specific email prefixes for each integration. You can also contact us to set an easy-to-remember exclusive domain name for your main account. For example, order-service@tesla.flashcat.cloud.
 :::
 

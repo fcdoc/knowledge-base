@@ -27,19 +27,19 @@ This article is compatible with **Nightingale V5 and V6** versions.
 ## Operation Steps
 ---
 
-### In Flashduty,
+### In Flashduty
 
-You can obtain an integrated push address using either of the following two methods, choose one.
+使用专属集成
 
-#### Use Exclusive Integration
+#### Use Proprietary Integrations
 
-When you do not need to route alert events to different collaboration spaces, this method is recommended as it is simpler.
+When you do not need to route alarm events to different collaboration spaces, this method is preferred because it is simpler.
 
 <details><summary>Expand</summary><ol><li> Enter the Flashduty console, select **the collaboration space** , and enter the details page of a certain space</li><li> Select **Integration Data** tab and click **Add an Integration** to enter the Add Integration page.</li><li> Select **Nightingale /Flashcat** integration, click **Save** , and generate the card.</li><li> Click on the generated card to view **the push address** , copy it for later use, and complete.</li><li> (Optional) Click the generated card, click the **Edit** button, select **the console address** , and enter the Nightingale console address (only the domain name part). Flashduty A Nightingale details jump link will be generated for the new alarm.</li></ol></details>
 
-#### Use Shared Integration
+#### Use Shared Integrations
 
-When you need to route alerts to different collaboration spaces based on the payload information of the alert event, this method is recommended.
+When you need to route alarms to different collaboration spaces based on the payload information of the alarm event, this method is preferred.
 
 <details><summary>Expand</summary><ol><li> Enter the Flashduty console, select **Integration Center = > event** , and enter the integration selection page.</li><li> Select **Nightingale /Flashcat** integration:</li></ol><ul><li> **Integration Name** : Define a name for the current integration.</li><li> **Console address** : (Optional) Enter the Nightingale console address (only the domain name part). Flashduty A Nightingale details jump link will be generated for new alarms.</li></ul><ol start="3"><li> After clicking **Save** , copy the newly generated **push address** of the current page for later use.</li><li> Click **Create Route** to configure routing rules for the integration. You can match different alarms to different collaboration spaces based on conditions, or you can directly set the default collaboration space as a fallback, and then adjust it as needed.</li><li> Finish.</li></ol></details>
 
@@ -67,11 +67,11 @@ Headers = ["Content-Type", "application/json", "X-From", "N9E"]
 
 Nightingale/Flashcat to Flashduty alert level mapping:
 
-| n9e |  Flashduty  | Status |
+| n9e |  Flashduty  | state |
 | --- | -------- | ---- |
-| 1   | Critical | Serious |
-| 2   | Warning  | Warning |
-| 3   | Info     | Reminder |
+| 1   | Critical | serious |
+| 2   | Warning  | warn |
+| 3   | Info     | remind |
 
 ## FAQs
 ---

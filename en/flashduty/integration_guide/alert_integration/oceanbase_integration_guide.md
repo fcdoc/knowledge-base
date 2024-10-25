@@ -10,11 +10,11 @@ Synchronize OceanBase alarm events to Kuaimao Nebula via webhook to automate noi
 
 ## In Flashduty
 ---
-You can obtain an integrated push address using either of the following two methods.
+使用专属集成
 
 ### Use Proprietary Integrations
 
-When there is no need to route alarm events to different collaboration spaces, this method is recommended for its simplicity.
+When you do not need to route alarm events to different collaboration spaces, this method is preferred because it is simpler.
 
 <details><summary>Expand</summary><ol><li><p> Enter the Flashduty console, select **the collaboration space** , and enter the details page of a certain space</p></li><li><p> Select **Integration Data** tab and click **Add an Integration** to enter the Add Integration page.</p></li><li><p> Select **OceanBase** Integrate, click **Save** , and generate the card.</p></li><li><p> Click on the generated card to view **the push address** , copy it for later use, and complete.</p></li></ol></details>
 
@@ -113,13 +113,13 @@ fi</p><pre> `
 
 <div class="md-block">
 
-|OceanBase|Kuaimao Nebula|Status|
+|OceanBase|Kuaimao Nebula|state|
 |---|---|---|
-|Service Suspension|Critical|Critical|
-|Critical|Warning|Critical|
-|Warning|Warning|Warning|
-|Notice|Info|Reminder|
-|Reminder|Info|Reminder|
+|Service Suspension|Critical|serious|
+|serious|Warning|serious|
+|warn|Warning|warn|
+|Notice|Info|remind|
+|remind|Info|remind|
 
 </div>
 
@@ -128,12 +128,12 @@ fi</p><pre> `
 ---
 <div class="md-block">
 
-|OceanBase|Kuaimao Nebula|Status|
+|OceanBase|Kuaimao Nebula|state|
 |---|---|---|
-|Service Suspension|Critical|Critical|
-|Critical|Warning|Critical|
-|Warning|Warning|Warning|
-|Notice|Info|Reminder|
-|Reminder|Info|Reminder|
+|Service Suspension|Critical|serious|
+|serious|Warning|serious|
+|warn|Warning|warn|
+|Notice|Info|remind|
+|remind|Info|remind|
 
 </div>

@@ -19,7 +19,7 @@ Push Prometheus alert events to Flashduty via AlertManager using a webhook. When
 - You must have the permission to modify the AlertManager configuration file.
 - Your AlertManager server must be able to access the domain api.flascat.cloud to push alerts to the external network.
 
-## Supported Version
+## Supported Versions
 ---
 
 This article is compatible with **Alertmanager version 0.16.0 and above**.
@@ -29,17 +29,17 @@ This article is compatible with **Alertmanager version 0.16.0 and above**.
 
 ### In Flashduty
 
-You can obtain an integrated push address using two methods. Choose one of them.
+使用专属集成
 
-#### Use Exclusive Integration
+#### Use Proprietary Integrations
 
-When you don't need to route alert events to different collaboration spaces, this method is recommended for its simplicity.
+When you do not need to route alarm events to different collaboration spaces, this method is preferred because it is simpler.
 
 <details><summary>Expand</summary><ol><li> Enter the Flashduty console, select **the collaboration space** , and enter the details page of a certain space</li><li> Select **Integration Data** tab and click **Add an Integration** to enter the Add Integration page.</li><li> Select **Prometheus** Integrate, click **Save** , and generate the card.</li><li> Click on the generated card to view **the push address** , copy it for later use, and complete.</li></ol></details>
 
-#### Use Shared Integration
+#### Use Shared Integrations
 
-When you need to route alerts to different collaboration spaces based on the payload information of the alert event, this method is preferred.
+When you need to route alarms to different collaboration spaces based on the payload information of the alarm event, this method is preferred.
 
 <details><summary>Expand</summary><ol><li> Enter the Flashduty console, select **Integration Center = > event** , and enter the integration selection page.</li><li> Select ** Prometheus** integration:</li></ol><ul><li> **Integration Name** : Define a name for the current integration.</li></ul><ol start="3"><li> After clicking **Save** , copy the newly generated **push address** of the current page for later use.</li><li> Click **Create Route** to configure routing rules for the integration. You can match different alarms to different collaboration spaces based on conditions, or you can directly set the default collaboration space as a fallback, and then adjust it as needed.</li><li> Finish.</li></ol></details>
 
@@ -80,15 +80,15 @@ The system sequentially extracts the `severity`, `priority`, and `level` tags fr
 
 Prometheus to Flashduty Alert Level Mapping:
 
-| Prometheus   |  Flashduty  | Status |
+| Prometheus   |  Flashduty  | state |
 | ------------ | -------- | ---- |
-| critical     | Critical | Critical |
-| warning      | Warning  | Warning |
-| warn         | Warning  | Warning |
-| info         | Info     | Reminder |
-| acknowledged | Info     | Reminder |
-| unknown      | Info     | Reminder |
-| unk          | Info     | Reminder |
+| critical     | Critical | serious |
+| warning      | Warning  | warn |
+| warn         | Warning  | warn |
+| info         | Info     | remind |
+| acknowledged | Info     | remind |
+| unknown      | Info     | remind |
+| unk          | Info     | remind |
 | ok           | Ok       | Recovered |
 
 ## FAQs

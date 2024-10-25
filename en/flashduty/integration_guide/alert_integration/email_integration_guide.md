@@ -15,21 +15,21 @@ Generate a unique email address in Flashduty and synchronize alarm occurrences a
 
 You can obtain an email address using either of the following two methods.
 
-#### Use Exclusive Integration
+#### Use Proprietary Integrations
 
-Select this method if you don't need to route alarm events to different collaboration spaces, as it is simpler.
+When you do not need to route alarm events to different collaboration spaces, this method is preferred because it is simpler.
 
 <details><summary>Expand</summary><ol><li> Enter the Flashduty console, select **the collaboration space** , and enter the details page of a certain space</li><li> Select **Integration Data** tab and click **Add an Integration** to enter the Add Integration page.</li><li> Select **Mail Email** Integration, click **Save** , and generate the card.</li><li> Click on the generated card to view **the email address** , copy it for later use, and complete.</li></ol></details>
 
-#### Use Shared Integration
+#### Use Shared Integrations
 
-Select this method when you need to route alarms to different collaboration spaces based on the alarm event's payload information.
+When you need to route alarms to different collaboration spaces based on the payload information of the alarm event, this method is preferred.
 
 <details><summary>Expand</summary><ol><li> Enter the Flashduty console, select **Integration Center = > event** , and enter the integration selection page.</li><li> Select **Mail Email** Integration:</li></ol><ul><li> **Integration Name** : Define a name for the current integration.</li><li> **Email address** : Set a prefix for the email that is easy to remember and needs to be unique under the account.</li><li> **Push mode** : Select the situation under which the email triggers or restores the alarm.</li></ul><ol start="3"><li> Copy **the email address** of the current page for later use.</li><li> Click **Create Route** to configure routing rules for the integration. You can match different alarms to different collaboration spaces based on conditions, or you can directly set the default collaboration space as a fallback, and then adjust it as needed.</li><li> Finish.</li></ol></details>
 
 ### Customize Email Integration
 
-#### Email Address
+#### Email address
 
 By default, the system generates a unique email address for you. You can customize it, but note that **the email prefix must consist only of letters and numbers** and remain unique within your account.
 
@@ -72,7 +72,7 @@ attachment_stripped = true
 
 
 
-## Severity Mapping
+## Severity Level Mapping
 ---
 
 The current email integration pushes alerts to Flashduty at a Warning level.

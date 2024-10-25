@@ -17,7 +17,7 @@ Visit [Feishu Developer Backend](https://open.feishu.cn/app) to create a self-bu
 
 <img src="https://fcdoc.github.io/img/YyRTmgwY7nfhtcBdhnk4SVQW2v1Km27PNshoKZia7Yw.avif" alt="drawing" width="400"/>
 
-The application icon can use the [Flashduty Official Icon](https://download.flashcat.cloud/flashcat_logo_circular.png).
+The application icon can be the [Flashduty Official Icon](https://download.flashcat.cloud/flashcat_logo_circular.png).
 
 ### 2. Copy Credential Information
 
@@ -94,19 +94,19 @@ After the application is released, you can use the mobile /PC to access the appl
 ## 5. Frequently Asked Questions
 ---
 
-1. **Messages cannot be delivered to individuals**, and the operation record indicates `Unassociated Application`?
+1. **Why can't the message be delivered to an individual**, and the operation record indicates `Unassociated Application`?
 
 - Go to Feishu > Workbench > search for the application name > open the application, complete a login, and associate the (Feishu <-> Flashduty) account so that the system can obtain the user identity for message delivery
 
 2. **Message card buttons are not clickable or result in errors**?
 
 - Ensure that the account has been associated. Go to Feishu > Workbench > search for the application name > open the application, complete a login, and associate the (Feishu <-> Flashduty) account. If you have already logged in, try clicking the menu in the upper right corner, switch accounts, and log in again to bind the account
-- Ensure that you have purchased an adequate number of licenses. The usage status of licenses can be viewed in the console > Expense Center
+- Ensure you have purchased an adequate number of licenses. The status of used licenses can be viewed in the console > Expense Center
 
 2. **The Feishu group chat list is empty in the distribution strategy**?
 
 - Go to Feishu, select a group chat session, and add the created Flashduty robot as shown in the figure below:
-- Return to the distribution strategy configuration page, refresh, and then re-select the group chat list
+- Return to the distribution policy configuration page, refresh, and select the group chat list again
 
 <img alt="drawing" width="800" src="https://fcdoc.github.io/img/tWCiY7hewPCCai_aENHshvt2Beaa3zMSxH8N6ZiLzAw.avif" />
 <img src="https://fcdoc.github.io/img/UWIKy3ycnjzP0bMylXS_6NG-4G2-SSfq54kIjC-hruQ.avif" alt="drawing" width="800"/>

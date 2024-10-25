@@ -32,7 +32,7 @@ When you need to route alarms to different collaboration spaces based on the pay
 
 ### Use Shared Integrations
 
-#### 使用共享集成
+#### 5. 完成
 
 <div id="!"><ol><li>media type is the transmission channel used in Zabbix to send notifications and alarms. Enter the terminal and download the complete configuration through the following command</li></ol><pre> `// 5.x版本 XML配置：
 wget https://download.flashcat.cloud/flashduty/integration/zabbix/zbx_mediatype_flashcat_v5.xml
@@ -41,15 +41,15 @@ wget https://download.flashcat.cloud/flashduty/integration/zabbix/zbx_mediatype_
 wget https://download.flashcat.cloud/flashduty/integration/zabbix/zbx_mediatype_flashcat_v6.yml
 `</pre><ol start="2"><li> Log in to the Zabbix console, select `Administration > Media Types` , click the Import button in the upper right corner to enter the editing page, select the configuration file downloaded above, and click the Import button to complete the import.</li><li> Return to the Media Types page and you can see media type that has been imported. Click on the name to enter the editing page, complete the content such as URL , zabbix_url and HTTPProxy</li></ol><ul><li> `URL` : webhook Push request address, just copy the integrated push address</li><li> `zabbix_url` : Zabbix console address, just copy it (if your page is configured with tomcat/nginx forwarding path, please bring it with it at the same time), the system will splice trigger_id and other parameters after the path to generate the alarm details page connection</li><li> `HTTPProxy` : If your Zabbix Server cannot directly access the Flashduty service, you can set this parameter to a proxy address</li></ul><img alt="drawing" width="600" src="https://fcdoc.github.io/img/Wa1lJ6E3soYLZa2u6CJUpyAbJsVvqjqDuTl2m5pyK-g.avif"><ol start="4"><li> Click Update to save the configuration</li></ol></div>
 
-#### Step 2: Associate media type to user
+#### 在 Zabbix
 
 <div id="!"><p>media type Must be associated with a user to send events. user has at least permission to host of read . It is recommended to link directly to Admin users. Take Admin user as an example:</p><ol><li> Log in Zabbix console, select `Administration > Users` , select Admin User, select media , select Add , enter the editing window:</li></ol><ul><li> Type : Select Flashduty  media type created above</li><li> Send To : Fill in N/A</li><li> Other configurations use the default configuration and remain unchanged.</li></ul><img alt="drawing" width="600" src="https://fcdoc.github.io/img/NQZGtjnDMgN5oBrDr-I7TfOtAVCihNKlxVsahULxRMg.avif"><ol start="2"><li> Click the Add button to exit the Add media window</li><li> Click the Update button to exit the editing user page</li></ol></div>
 
-#### Integration Name: Define a name for the current integration
+#### 步骤 1:定义 Flashduty  media type
 
 <div id="!"><p>Sending a notification is one of the operations performed by the action ( actions ) in Zabbix . So, to set up a notification, log into Zabbix console, select `Configuration > Actions` , then:</p><ol><li> Click `Create action` to enter action edit page</li></ol><ul><li> Name : Fill in as " Send To FlashDuty "</li></ul><ol start="2"><li> Select `Operations` to add notification sending configurations for three scenarios:</li></ol><ul><li> In the Operations configuration item, Add the button to enter the configuration window</li><li> Send to users : Select the newly created or configured one above user</li><li> Send only to : Select Flashduty  media type</li><li> Keep other configurations as default</li><li> Click the Add button to complete the configuration of this configuration item</li><li> Repeat the above steps to complete the configuration of `Recovery operations` and `Update operations`</li></ul><img alt="drawing" width="600" src="https://fcdoc.github.io/img/eBJqunprfGJYQKJ843YcyuGkeEtykZmW2n9Wme-xqTc.avif"><img alt="drawing" width="600" src="https://fcdoc.github.io/img/EPSOBfH6Q2QrVkBSqKBj5rEJxsrnm7VD2gaoczsAl00.avif"></div>
 
-#### Step 4: Send Events to Flashduty
+#### Step 4: Send events to Flashduty
 
 <div id="!"><p>Log in Zabbix Console, select `Monitoring > Problems` to view the latest alarm list.</p><ol><li> Click Actions , you can see the message notification results in the pop-up window</li><li> Find the corresponding log of Flashduty . If Status is `Sent` , it means the notification is successful. Otherwise, check the reason according to the prompts.</li></ol><img alt="drawing" width="600" src="https://fcdoc.github.io/img/OXyBJbDkZ1sj4otE-Is2dYelUR6ggs6rHPr-VtC3JGk.avif"><ol start="3"><li> Return to the integration list. If the latest event time is displayed, the configuration is successful and the event is received.</li><li> Finish</li></ol></div>
 

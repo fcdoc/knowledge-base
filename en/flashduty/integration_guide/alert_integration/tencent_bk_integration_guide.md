@@ -10,15 +10,15 @@ Synchronize Blue Whale Cloud monitoring events with Flashduty via webhook to aut
 
 ## In Flashduty
 ---
-You can obtain an integrated push address using either of the following two methods.
+使用专属集成
 
-### Use Exclusive Integration
+### Use Proprietary Integrations
 
-When there's no need to route alarm events to different collaboration spaces, this method is recommended for its simplicity.
+When you do not need to route alarm events to different collaboration spaces, this method is preferred because it is simpler.
 
 <details><summary>Expand</summary><ol><li><p> Enter the Flashduty console, select **the collaboration space** , and enter the details page of a certain space</p></li><li><p> Select **Integration Data** tab and click **Add an Integration** to enter the Add Integration page.</p></li><li><p> Select **Blue Whale Zhiyun** integration, click **Save** to generate a card.</p></li><li><p> Click on the generated card to view **the push address** , copy it for later use, and complete.</p></li></ol></details>
 
-### Use Shared Integration
+### Use Shared Integrations
 
 When you need to route alarms to different collaboration spaces based on the payload information of the alarm event, this method is preferred.
 
@@ -39,14 +39,14 @@ Blue Whale alarm policies can trigger `processing packages`, which can be integr
 
 <div id="!"><ol><li>Enter the `配置-告警策略` page, select an existing policy to edit, or create a new alarm policy;</li><li> Scroll down to Part `告警处理` , select `Send To FlashDuty` processing package for all three scenarios, and turn off `防御规则` , as shown below:</li></ol><img alt="drawing" width="600" src="https://fcdoc.github.io/img/yeCaYyAFIHIaZZL6z7_gTPHz-vjF6nCl5Yw8rv1t9SI.avif"><ol start="3"><li> Submit and save, complete;</li><li> For other alarms that you want to push to FlashDuty repeat the above steps.</li></ol></div>
 
-## Status Correspondence
+## Status Comparison
 ---
 <div class="md-block">
 
-| Blue Whale Zhiyun |  Flashduty  | Status |
+| Blue Whale Zhiyun |  Flashduty  | state |
 | -------- | -------- | ---- |
-| Fatal     | Critical | Serious |
-| Early Warning     | Warning  | Warning |
-| Reminder     | Info     | Reminder |
+| Fatal     | Critical | serious |
+| Early Warning     | Warning  | warn |
+| remind     | Info     | remind |
 
 </div>

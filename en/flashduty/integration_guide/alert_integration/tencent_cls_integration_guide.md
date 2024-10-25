@@ -10,17 +10,17 @@ brief: 1	Synchronize Tencent Cloud Log Service CLS monitoring alarm events to Ku
 
 ## In Flashduty
 ---
-You can obtain an integrated push address using two methods; you may choose either one.
+使用专属集成
 
-### Use Exclusive Integration
+### Use Proprietary Integrations
 
-When there's no need to route alarm events to different collaboration spaces, this method is recommended for its simplicity.
+When you do not need to route alarm events to different collaboration spaces, this method is preferred because it is simpler.
 
 <details><summary>Expand</summary><ol><li><p> Enter the Flashduty console, select **the collaboration space** , and enter the details page of a certain space</p></li><li><p> Select **Integration Data** tab and click **Add an Integration** to enter the Add Integration page.</p></li><li><p> Select **Tencent Cloud CLS** integration, click **Save** , and generate a card.</p></li><li><p> Click on the generated card to view **the push address** , copy it for later use, and complete.</p></li></ol></details>
 
-### Use Shared Integration
+### Use Shared Integrations
 
-When you need to route alarms to different collaboration spaces based on the alarm event's payload information, this method is preferred.
+When you need to route alarms to different collaboration spaces based on the payload information of the alarm event, this method is preferred.
 
 <details><summary>Expand</summary><ol><li> Enter the Flashduty console, select **Integration Center = > event** , and enter the integration selection page.</li><li> Select **Tencent Cloud CLS** integration:</li></ol><ul><li> **Integration Name** : Define a name for the current integration.</li></ul><ol start="3"><li> After clicking **Save** , copy the newly generated **push address** of the current page for later use.</li><li> Click **Create Route** to configure routing rules for the integration. You can match different alarms to different collaboration spaces based on conditions, or you can directly set the default collaboration space as a fallback, and then adjust it as needed.</li><li> Finish.</li></ol></details>
 
@@ -70,12 +70,12 @@ When you need to route alarms to different collaboration spaces based on the ala
 </code></pre></div>
 
 
-## Status Correspondence
+## Status Comparison
 ---
 9	<div class="md-block">
 
-| Tencent Cloud CLS Monitoring |  Flashduty    | Status
+| Tencent Cloud CLS Monitoring |  Flashduty    | state
 | ------------- | --------- | --- |
-| Info          |  Info     | Reminder
-| Warn          |  Warning  | Warning
+| Info          |  Info     | remind
+| Warn          |  Warning  | warn
 | Critical      |  Critical | urgent</p> </

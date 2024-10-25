@@ -17,17 +17,17 @@ Flashduty is compatible with the webhook protocols of most commonly used alert s
 
 ### In Flashduty
 
-You can obtain a push address for integration through the following two methods, choose one that suits you.
+使用专属集成
 
-#### Use a Dedicated Integration
+#### Use Proprietary Integrations
 
-Choose this method if you do not need to route alert events to different collaboration spaces, as it is more straightforward.
+When you do not need to route alarm events to different collaboration spaces, this method is preferred because it is simpler.
 
 <details><summary>Expand</summary><ol><li> Enter the Flashduty console, select **the collaboration space** , and enter the details page of a certain space</li><li> Select **Integration Data** tab and click **Add an Integration** to enter the Add Integration page.</li><li> Select **Prometheus** Integrate, click **Save** , and generate the card.</li><li> Click on the generated card to view **the push address** , copy it for later use, and complete.</li></ol></details>
 
-#### Use a Shared Integration
+#### Use Shared Integrations
 
-Opt for this method when you need to route alerts to different collaboration spaces based on the payload information of the alert event.
+When you need to route alarms to different collaboration spaces based on the payload information of the alarm event, this method is preferred.
 
 <details><summary>Expand</summary><ol><li> Enter the Flashduty console, select **Integration Center = > event** , and enter the integration selection page.</li><li> Select **custom event** integration:</li></ol><ul><li> **Integration Name** : Define a name for the current integration.</li></ul><ol start="3"><li> After clicking **Save** , copy the newly generated **push address** of the current page for later use.</li><li> Click **Create Route** to configure routing rules for the integration. You can match different alarms to different collaboration spaces based on conditions, or you can directly set the default collaboration space as a fallback, and then adjust it as needed.</li><li> Finish.</li></ol></details>
 

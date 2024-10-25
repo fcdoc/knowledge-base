@@ -25,7 +25,7 @@ Each collaborative workspace should have at least one dispatch policy in place. 
 
 Visit [How to Configure Filter Conditions](https://docs.flashcat.cloud/zh/flashduty/how-to-filter) for more information.
 
-## Dispatch Configuration
+## Dispatch configuration
 ---
 
 ### Dispatch Object

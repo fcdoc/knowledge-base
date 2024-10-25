@@ -228,7 +228,7 @@ You need to pre-configure `集成中心-即时消息-飞书` integration to send
 {{if not (in $k "resource" "body_text")}}**{{$k}}** : {{toHtml $v}}{{end}}{{end}}
 ```
 
-As shown below:
+As shown in the figure below:
 
 <img src="https://fcdoc.github.io/img/J98dSP86cWqCChp7NGPy5yWabfG66jrDlLFIgzpMjYw.avif" alt="drawing" style="display: block; margin: 0 auto;" width="500"/>
 
@@ -273,7 +273,7 @@ You need to pre-configure `集成中心-即时消息-钉钉` integration to send
 {{if not (in $k "resource" "body_text")}}**{{$k}}** : {{toHtml $v}}{{end}}{{end}}
 ```
 
-As shown below:
+As shown in the figure below:
 
 <img src="https://fcdoc.github.io/img/weJqFl22lWcHW3KZo4lFHKRadEvGUclE7OL3W8BM2F0.avif" alt="drawing" style="display: block; margin: 0 auto;" width="500"/>
 
@@ -335,7 +335,7 @@ You need to pre-configure `集成中心-即时消息-企业微信` integration t
 {{if (index .Labels "runbook_url")}}runbook_url：{{toHtml (index .Labels "runbook_url")}}{{end}}
 ```
 
-As shown below:
+As shown in the figure below:
 
 <img src="https://fcdoc.github.io/img/kc9K5HzTgAu_MmhpaEV9CWqmg5AZwDmV6X4g_T10mnc.avif" alt="drawing" style="display: block; margin: 0 auto;" width="500"/>
 
@@ -355,7 +355,7 @@ You need to pre-configure `集成中心-即时消息- Slack` integration to send
 ```
 
 
-As shown below:
+As shown in the figure below:
 
 <img src="https://fcdoc.github.io/img/0m3LAvve_fgFH8cVvhTk6Z4Qwpw5SUFee7hf7XliCAs.avif" alt="drawing" style="display: block; margin: 0 auto;" width="600"/>
 
@@ -401,7 +401,7 @@ You need to pre-configure `集成中心-即时消息- Microsoft Teams` integrati
 ```
 
 
-As shown below:
+As shown in the figure below:
 
 <img src="https://fcdoc.github.io/img/BAqnlzAiIJTgO4QpAvulu4fB62HIMfiWSXjldSxB5Uk.avif" alt="drawing" style="display: block; margin: 0 auto;" width="300"/>
 
@@ -449,7 +449,7 @@ You need to pre-configure `集成中心-即时消息- Microsoft Teams` integrati
 ```
 
 
-As shown below:
+As shown in the figure below:
 
 <img src="https://fcdoc.github.io/img/BAqnlzAiIJTgO4QpAvulu4fB62HIMfiWSXjldSxB5Uk.avif" alt="drawing" style="display: block; margin: 0 auto;" width="300"/>
 
@@ -488,8 +488,8 @@ If you want to display only key tag information, you can refer to the following 
 Feishu Robot only supports sending plain text messages.
 
 - message0 `Maximum length is 4000 bytes, truncated and sent if exceeded`;
-- If the text contains `<br>`, it will first remove empty lines and then replace `<br>` with a newline character during rendering;
-- If you do not set custom content, the system default template will be used to display only key information:
+- If the text contains `<br>`, it will `first remove empty lines and then replace <br> with newline characters` during rendering;
+- If custom content is not set, the system default template will be used, displaying only key information:
 
 ```
 {{fireReason .}}INC #{{.Num}} {{toHtml .Title}}
@@ -512,8 +512,8 @@ Feishu Robot only supports sending plain text messages.
 DingTalk Robot only supports sending Markdown messages ([grammar restrictions](https://open.dingtalk.com/document/robots/custom-robot-access#title-7ur-3ok-s1a)).
 
 - message0 `Maximum length is 4000 bytes, truncated and sent if exceeded`;
-- If the text contains `<br>`, it will first remove empty lines and then replace `<br>` with a newline character during rendering;
-- If you do not set custom content, the system default template will be used to display only key information:
+- If the text contains `<br>`, it will `first remove empty lines and then replace <br> with newline characters` during rendering;
+- If custom content is not set, the system default template will be used, displaying only key information:
 
 ```
 {{fireReason .}}INC [#{{.Num}}]({{.DetailUrl}}) {{toHtml .Title}}
@@ -538,8 +538,8 @@ DingTalk Robot only supports sending Markdown messages ([grammar restrictions](h
 Qiwei Robot only supports sending Markdown messages ([grammar restrictions](https://developer.work.weixin.qq.com/document/path/91770#markdown%E7%B1%BB%E5%9E%8B)).
 
 - message0 `Maximum length is 4000 bytes, truncated and sent if exceeded`;
-- If the text contains `<br>`, it will first remove empty lines and then replace `<br>` with a newline character during rendering;
-- If you do not set custom content, the system default template will be used to display only key information:
+- If the text contains `<br>`, it will `first remove empty lines and then replace <br> with newline characters` during rendering;
+- If custom content is not set, the system default template will be used, displaying only key information:
 
 ```
 {{fireReason .}}**INC [#{{.Num}}]({{.DetailUrl}}) {{toHtml .Title}}**
@@ -560,8 +560,8 @@ Qiwei Robot only supports sending Markdown messages ([grammar restrictions](http
 ---
 - Configure the Telegram service address that can be accessed in China;
 - message0 `Maximum length is 4096 characters, not sent if exceeded`;
-- If the text contains `<br>`, it will first remove empty lines and then replace `<br>` with a newline character during rendering;
-- If you do not set custom content, the system default template will be used to display only key information:
+- If the text contains `<br>`, it will `first remove empty lines and then replace <br> with newline characters` during rendering;
+- If custom content is not set, the system default template will be used, displaying only key information:
 
 ```
 {{fireReason .}}INC [#{{.Num}}]({{.DetailUrl}}) {{toHtml .Title}}

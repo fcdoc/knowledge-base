@@ -102,7 +102,7 @@ Platform capabilities are primarily focused on member management, duty response,
 ---
 Vendors typically offer various subscription options. However, we primarily consider which option offers the best value for money when meeting our own needs. Ensuring that actual usage does not exceed the budget and that the pricing method is straightforward is crucial.
 
-|  Comparative Items  |  Flashduty  |  Pagerduty  |
+|  Comparison Item  |  Flashduty  |  Pagerduty  |
 | --- | --- | --- |
 | **Price Page**   | [price.flashcat.cloud](https://flashcat.cloud/flashduty/price/) | [price.pagerduty.com](https://www.pagerduty.com/pricing/incident-response/) |
 |  **Charging Method**  |  Seat fee + excess communication fee  |  Seat fee + Add-Ons  |
@@ -121,7 +121,7 @@ The service dimension primarily assesses the supplier's response method and time
 |  **Is expert remote support available?**  |  ✅, remote meeting support for problem-solving  |  Needs to be purchased separately  |
 |  **Service Hours**  |  Standard version: 5x8, Professional version: 7x8  |  Unknown  |
 |  **Does it provide a Status Page?**  |  Yes, [status.flashcat.cloud](https://status.flashcat.cloud/)  |  Yes, [status.pagerduty.com](https://status.pagerduty.com/)  |
-|  **Does it provide a Roadmap?**  |  Yes, [roadmap.flashcat.cloud](https://c9xudyniiq.feishu.cn/base/SAUGbfgkeatk9Gsqjj0cH6eGnZg)  |  No  |
+|  **Does it provide a Roadmap?**  |  Yes, [roadmap.flashcat.cloud](https://c9xudyniiq.feishu.cn/base/SAUGbfgkeatk9Gsqjj0cH6eGnZg)  |  no  |
 
 ### In Conclusion
 ---

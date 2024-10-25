@@ -25,7 +25,7 @@ Flashduty offers two entry points for viewing the fault list: one within the col
 7. **View Settings**: Offers a range of rendering options, including the ability to introduce **custom display attributes** and aggregate views.
 8. **Pagination Settings**: Adjust pagination and the number of items per page.
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 2	In order to enhance performance, when the search criteria match over **1000** faults, the system displays 1000+ only, rather than the exact number. Consequently, you can only view 1000 faults by navigating through pages. If you wish to see more, please adjust your search time frame. Alternatively, you can access all data via the [Fault Query](https://developer.flashcat.cloud/api-110655782) API.
 :::
 
@@ -35,7 +35,7 @@ Aggregate views provide a different perspective for viewing faults, allowing you
 
 ![](https://fcdoc.github.io/img/J7MizvU-Gd2gBNItJuE5kbo0FeypSzo74DxQSwGZm_8.avif)
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 For performance reasons, the system will match up to **100 pieces of** data for aggregation in the aggregate view. Thus, the list page you see may not include all matching data. If this is a concern, switch to the list view.
 :::
 
@@ -46,7 +46,7 @@ Flashduty provides various filtering capabilities and offers ample flexibility. 
 - Search for related faults triggered by the "Host Down" alarm policy based on the check tag.
 - Search for related faults marked as "false positive" based on the false positive field.
 
-:::🔹 Highlight: Orange 💡
+:::highlight orange 💡
 Flexibility often comes at the cost of performance, and this is also true for Flashduty, despite our extensive performance optimizations. We always recommend narrowing your search time range and using conditions like **assigned to me** and **processing progress** to limit the scope of your query.
 :::
 

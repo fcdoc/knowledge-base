@@ -20,7 +20,7 @@ By integrating a third-party Slack application, the capability to receive and re
 3. Enter the data source name and click `Save`
 
 
-## 2. Frequently Asked Questions
+## 2. Common Issues
 ---
 
 1. **The desired private channel is missing from the group chat list in the dispatch policy**
